@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 2px solid black;
+	width: 80%;
+	margin: auto;
+}
+main{
+	display: flex;
+	justify-content: space-between;
+}
+p{
+	color: grey;
+}
+header{
+	display: flex;
+	align-items: center;
+	padding-left: 100px;
+	border-bottom: 2px solid black;
+}
+header .h1{
+	font-size: 60px;
+}
+aside{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+aside .andata{
+	background-color: black;
+	color: orange;
+}
+aside .data-partenza, aside .kilometri{
+	background-color: lightgrey;
+}
+main .prezzo{
+	border-left: 2px solid black;
+}
+footer{
+	border-top: 2px solid black;
+	display: flex;
+	justify-content: space-between;
+}

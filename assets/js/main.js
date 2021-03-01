@@ -13,16 +13,16 @@ if(isNaN(eta)){
 console.log(km, eta);
 
 //faccio il calcolo del prezzo pieno del biglietto
-var fullPrice = km * 0.21;
+var fullPrice = (km * 0.21).toFixed(2);
 console.log(fullPrice);
 //faccio degli if ed else per stabilire quale sconto applicare all'utente
 if(eta < 18){
 	//per fare lo sconto del 20% ho fatto *80/100
-	lowPrice = price = (fullPrice * 80) / 100;
+	lowPrice = price = ((fullPrice * 80) / 100).toFixed(2);
 }
 else if(eta > 65){
 	//per fare lo sconto del 40% ho fatto *60/100
-	lowestPrice = price = (fullPrice * 60) / 100;
+	lowestPrice = price = ((fullPrice * 60) / 100).toFixed(2);
 }
 else{
 	//per il biglietto a prezzo pieno
@@ -31,3 +31,4 @@ else{
 console.log(price);
 //scrivo il prezzo del biglietto sul html
 document.getElementById("price").innerHTML = price;
+
