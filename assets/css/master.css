@@ -11,6 +11,7 @@ main{
 }
 p{
 	color: grey;
+	font-weight: bold;
 }
 header{
 	display: flex;
@@ -27,11 +28,25 @@ aside{
 	width: 300px;
 }
 aside .andata{
+	font-size: 30px;
 	background-color: black;
 	color: orange;
+	height: 100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 aside .data-partenza, aside .kilometri{
 	background-color: lightgrey;
+}
+main .center{
+	width: 100%;
+}
+main .box{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 main .prezzo{
 	border-left: 2px solid black;
